@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <style>
+      body {
+        background-color: hsl(235, 18%, 26%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        width: 750px;
+        height: 500px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 150px;
+        border-radius: 15px;
+      }
+      .img {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: row;
+        height: 480px;
+        width: 45%;
+        padding: 10px;
+      }
+      .text {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 55%;
+        padding: 30px;
+      }
+      .first {
+        font-size: 40px;
+        color: hsl(234, 29%, 20%);
+      }
+      .galochka {
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+      }
+      .galo {
+        width: 20px;
+      }
+      .button {
+        background-color: white;
+        color: hsl(0, 0%, 58%);
+        width: 300px;
+        height: 40px;
+        border-color: black;
+      }
+      .last {
+        background-color: hsl(234, 29%, 20%);
+        border-radius: 10px;
+        width: 300px;
+        height: 100px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text">
+        <h1 class="first">Stay updated!</h1>
+
+        <span style="color: gray"
+          >Join 60,000+ product managers receiving monthly updates on:</span
+        >
+
+        <div class="three">
+          <div class="galochka">
+            <img class="galo" src="/assets/images/icon-success.svg" />
+            <p>Product discovery and building what matters</p>
+          </div>
+
+          <div class="galochka">
+            <img class="galo" src="/assets/images/icon-success.svg" />
+            <p>Measuring to ensure updates are a success</p>
+          </div>
+
+          <div class="galochka">
+            <img class="galo" src="/assets/images/icon-success.svg" />
+            <p>And much more!</p>
+          </div>
+        </div>
+
+        <span style="color: black">Email address</span>
+
+        <button class="button">
+          <input type="text" class="input" placeholder="email@company.com" />
+        </button>
+
+        <button class="last">Subscribe to monthly newsletter</button>
+      </div>
+      <img
+        class="img"
+        src="/assets/images/illustration-sign-up-desktop.svg"
+        alt="photo"
+      />
+    </div>
+  </body>
+</html>
